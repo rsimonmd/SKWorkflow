@@ -4,7 +4,8 @@ author: "R. SIMON"
 date: "`r Sys.Date()`"
 output:
   rmdformats::readthedown:
-     highlight: espresso
+     highlight: breezedark
+     code_folding: hide
      toc_depth: 4
      toc_float: 
         smooth_scroll: false
@@ -20,7 +21,7 @@ library(knitr)
 readRDS("results.rds") %>%
   list2env(envir = globalenv())
 
-opts_chunk$set(echo = F,
+opts_chunk$set(echo = T,
                message = F,
                warning = F,
                error = F)
