@@ -1,2 +1,2 @@
 # SKWorkflow
- Skeleton of ideal tody workflow 
+ Skeleton of ideal tidy workflow 
