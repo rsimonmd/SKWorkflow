@@ -1,0 +1,29 @@
+```{r libs}
+library(tidyverse)
+# library(lubridate)
+```
+
+# Tidy
+
+```{r import}
+dta <- read_csv("data/.csv")
+```
+
+Only non-destructive here ! 
+Rename columns, change classes, select/filter if necessary
+
+```{r tidy}
+dta_tidy <- 
+  data %>%
+  select() %>%
+  filter() %>%
+  mutate() %>%
+  mutate_if(is.character, factor)
+```
+
+# Export
+
+```{r export}
+list(dta = dta_iudy) %>%
+  saveRDS(file = "data/tidy.rds")
+```

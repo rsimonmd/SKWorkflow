@@ -1,0 +1,28 @@
+```{r libs}
+library(tidyverse)
+#library(readxl)
+#library(haven)
+#library(rvest)
+#library(jsonlite)
+```
+
+# Import
+
+
+```{r import}
+dta <- read_
+```
+
+# Check
+
+```{r}
+dta %>% str()
+```
+
+# Export
+
+```{r export}
+data %>%
+  write.csv("data/raw/.csv", row.names = F)
+```
+

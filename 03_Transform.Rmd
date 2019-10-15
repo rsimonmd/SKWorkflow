@@ -1,0 +1,30 @@
+```{r libs}
+library(tidyverse)
+# library(lubridate)
+```
+
+# Transform
+
+```{r import}
+readRDS("data/tidy.rds") %>%
+  list2env(envir = globalenv())
+```
+
+Destructive transformation are allowed here, feel free to experiment!
+
+```{r transform}
+dta_trans <-
+  dta %>%
+  mutate() %>%
+  select() %>%
+  filter()
+```
+
+# Export
+
+```{r export}
+list(dta = dta_trans) %>%
+  saveRDS("data/transformed.rds")
+```
+
+
