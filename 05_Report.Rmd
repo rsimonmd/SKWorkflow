@@ -5,10 +5,11 @@ date: "`r Sys.Date()`"
 output:
   rmdformats::readthedown:
      highlight: breezedark
-     code_folding: hide
-     toc_depth: 4
-     toc_float: 
-        smooth_scroll: false
+     lightbox: true
+     gallery: true
+     toc_depth: 3
+     code_folding: true
+     css: custom.css
 ---
 
 ```{r init, echo = F, message = F, warning = F}
@@ -18,12 +19,13 @@ library(knitr)
 #library(pander)
 #library(DT)
 
-readRDS("results.rds") %>%
+readRDS("data/results.rds") %>%
   list2env(envir = globalenv())
 
 opts_chunk$set(echo = T,
                message = F,
                warning = F,
-               error = F)
+               error = F,
+               cache = T)
 ```
 
